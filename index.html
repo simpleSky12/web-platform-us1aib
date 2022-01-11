@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+    <div class="demo">
+      <div></div>
+    </div>
+
+    <div class="demo">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="demo">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="demo">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <style>
+      .demo {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid red;
+      }
+      .demo div {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border: 1px solid blue;
+      }
+      .demo div:nth-child(2):last-child {
+        margin-right: calc(100% - 230px);
+      }
+    </style>
+  </body>
+</html>
